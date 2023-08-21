@@ -1,0 +1,35 @@
+#picfuse-wrapper {
+  display: flex;
+  flex: 0 1;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 2px solid white;
+}
+#picfuse-wrapper > .picfuse-img {
+  cursor: pointer;
+  position: relative;
+  pointer-events: fill;
+}
+#picfuse-wrapper > .picfuse-img img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease 0.1s;
+}
+#picfuse-wrapper > .picfuse-img img.clicked {
+  filter: contrast(50%);
+  border: 2px solid red;
+  position: relative;
+  scale: 1.05;
+}
+#picfuse-wrapper > .picfuse-img span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  transform: translate(-50%, -50%);
+}
+
+/*# sourceMappingURL=picfuse.css.map */

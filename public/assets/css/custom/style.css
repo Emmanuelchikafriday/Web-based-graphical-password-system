@@ -1,0 +1,42 @@
+.body .page-header {
+  margin-bottom: 2rem;
+}
+.body .trans-header > *:not(:first-child),
+.body .trans-body > *:not(:first-child) {
+  width: 22.5%;
+}
+.body #recovery-wizard .actions ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style-type: none;
+}
+.body #recovery-wizard .actions ul li {
+  margin: 2rem 0;
+  display: inline-block;
+}
+.body #recovery-wizard .actions ul li.disabled > a {
+  pointer-events: none;
+  color: rgba(5, 70, 255, 0.5);
+  border-color: rgba(5, 70, 255, 0.5);
+}
+.body #recovery-wizard .actions ul li:not(:last-of-type) {
+  margin-right: 0.5rem;
+}
+.body #recovery-wizard .actions ul li a {
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  border: 0.05rem solid rgba(50, 50, 250, 0.9);
+}
+.body #recovery-wizard .actions ul li a:hover {
+  color: #fff;
+  background-color: rgb(5, 70, 255);
+}
+
+.modal {
+  z-index: 2050;
+}
+.modal-backdrop {
+  z-index: 2040;
+}
+
+/*# sourceMappingURL=style.css.map */

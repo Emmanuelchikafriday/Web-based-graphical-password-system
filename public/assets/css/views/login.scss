@@ -1,0 +1,17 @@
+@keyframes translateX-30 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(40%);
+  }
+}
+
+button[type="submit"] {
+  &:hover {
+    > i:first-child {
+      transform: translateX(40%);
+      animation: translateX-30 300ms linear;
+    }
+  }
+}

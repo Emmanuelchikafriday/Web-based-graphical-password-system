@@ -1,0 +1,54 @@
+.body {
+  .page-header {
+    margin-bottom: 2rem;
+  }
+
+  .trans-header > *:not(:first-child),
+  .trans-body > *:not(:first-child) {
+    width: 22.5%;
+  }
+
+  #recovery-wizard {
+    .actions {
+      ul {
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style-type: none;
+
+        li {
+          margin: 2rem 0;
+          display: inline-block;
+
+          &.disabled > a {
+            pointer-events: none;
+            color: rgba(5, 70, 255, 0.5);
+            border-color: rgba(5, 70, 255, 0.5);
+          }
+
+          &:not(:last-of-type) {
+            margin-right: .5rem;
+          }
+
+          a {
+            padding: .3rem;
+            border-radius: .2rem;
+            border: .05rem solid rgba(50, 50, 250, 0.9);
+
+            &:hover {
+              color: #fff;
+              background-color: rgba(5, 70, 255, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  z-index: 2050;
+
+  &-backdrop {
+    z-index: 2040;
+  }
+}
